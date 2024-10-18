@@ -1,0 +1,93 @@
+html, body {
+    min-width: 290px;
+    color: #000;
+    background-color: #f2d4cc;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: #000;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+main {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar header{
+    padding-top: 10px;
+    margin: 5px 25px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#navbar li{
+    border-top: 2px solid;
+}
+
+#main-doc header{
+    font-weight: bold;
+    font-size: 20px;
+}
+#main-doc p{
+    text-align: justify;
+}
+
+#main-doc a{
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media query for screens wider than 1024px (desktops) */
+@media (min-width: 1024px) {
+    section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header {
+        font-size: 2.5em;
+    }
+}
